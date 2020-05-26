@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+    <body background="../images/fondoc.jpg" class= "margen">
+        
+        <center style="background-color: beige; opacity: 70%;"> <h1 style="color:blue; font-family: serif;">Mas preguntas!</h1></center> 
+<script>
+
+var pregunta = "asdas"
+var respuestaCorrecta = "si"
+var puntaje = 0
+descripcion = "nel"
+function preguntas (pregunta, descripcion){
+    var respuesta = prompt (pregunta);
+if (respuesta == respuestaCorrecta){
+    puntaje++ 
+}else {alert (descripcion);
+    preguntas(pregunta, descripcion);
+
+}
+}
+
+
+
+
+var pregunta1 = "¿Sabes que es el Rol?"
+var pregunta2 = "¿Sabias que todos los fines de semana hago un conversatorio?"
+var pregunta3 = "¿Sabias que lo hago en dos dias diferentes y dos horas diferentes?"
+var pregunta4 = "¿Sabes quien soy?"
+var pregunta5 = "¿Me seguis en instagram?"
+var descripcion1 = "Es un juego de mesa social, con un poco de teatro improvisado, donde tomas el papel de un personaje, dentro de una ficcion y a bases de descripciones orales, vas imaginando el mundo e interactuando en consecuencia."
+var descripcion2 = "¿COMO QUE NO?!!!!! TE LO ESTAS PERDIENDO!!!! Bueno ahora ya lo sabes."
+var descripcion3 = "Bueno me tomare la molestia de explicartelo. Todos los Sabados a las 18hs y los Domingos a las 22hs por Discord. No seas timido solo necesitas unos auriculares y no es necesario que hables si no queres."
+var descripcion4 = "Hola, soy Joaquin, mucho gusto."
+var descripcion5 = "https://www.instagram.com/joakko_mdp/"
+
+
+preguntas(pregunta1 , descripcion1);
+preguntas(pregunta2 , descripcion2);
+preguntas(pregunta3 , descripcion3);
+preguntas(pregunta4 , descripcion4);
+preguntas(pregunta5 , descripcion5);
+</script>
+
+
+
+
+
+
+</body>
+</html>

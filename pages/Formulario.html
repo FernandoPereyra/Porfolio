@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+    <body background="../images/fondoc.jpg" class= "margen">
+        
+        <center style="background-color: beige; opacity: 70%;"> <h1 style="color:blue; font-family: serif;">Formulario</h1></center> 
+<form >
+
+
+     <label for="nombre">Ingrese el nombre de su personaje:</label>
+         <!--<input type="text" onclick="datos()" id="nombre-de-personaje" name="nombre" required autocomplete="off">-->
+         <input id="nombre" autocomplete="off">
+
+         <br> </br>
+
+     <label for="clase">Ingrese si es Mago o Guerrero:</label>
+            <select  id="claseElejida" > 
+                <option id="Mago" value="Mago">Mago</option>
+                <option id="Guerrero" value="Guerrero">Guerrero</option>
+            
+        </select>
+        
+            
+        <br> </br>
+        
+        <input type="button" onclick="Datos()" value="Enviar" >
+
+        <br> </br>
+        <div id="textoParrafo"></div>
+       
+
+    </form>
+    </body>
+    <script>
+       function Datos(){
+            var nombre;
+            var texto;
+            var clase;
+            
+           clase = document.getElementById("claseElejida").value;
+           nombre = document.getElementById("nombre").value;
+           texto = "Habia una vez un poderoso " + clase + " que se enfrentaba a los mas terribles villanos. Su nombre era " +nombre+  ". Pero un dia perdio su poderosa arma y luego nunca fue el mismo."
+           document.getElementById("textoParrafo").innerHTML = texto;
+       }
+      
+         
+        
+        
+        
+
+    </script>
+</html>

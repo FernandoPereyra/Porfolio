@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventoR</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body>
+    <body background="../images/fondoc.jpg" class= "margen">
+        
+        <center style="background-color: beige; opacity: 70%;"> <h1 style="color:blue; font-family: serif;">Evento Recurrente</h1></center> 
+
+    <input type="button" value="Iniciar/continuar"
+        onclick= "jsIniciarContinuar()">
+    <input type="button" value= "Pausar" onclick="jsPausar();">
+
+    <div id="mensajes"></div>
+<script>
+    var i=1;
+    var a;
+
+    function jsIniciarContinuar() {
+        a= setInterval(function(){
+            cadena="N° "+(i++)+ "   ";
+            document.getElementById("mensajes").innerHTML+=cadena;
+        },1000)
+    }
+
+    function jsPausar(){
+        clearInterval(a);
+    }
+</script>
+
+</body>
+</html>
